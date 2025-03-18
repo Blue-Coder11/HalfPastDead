@@ -75,7 +75,7 @@ header {
     text-align: center;
     animation: fadeIn 1.5s ease-in;
 	color: black;
-	  filter: drop-shadow(0 0 10px red);
+	  filter: drop-shadow(0 0 10px #E10600);
 
 }
 
