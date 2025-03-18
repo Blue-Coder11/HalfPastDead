@@ -95,8 +95,10 @@ header {
 }
 
 .hero-image {
-    width: 10%;
- 
+    width: 50%; /* Default size for larger screens */
+    max-width: 400px; /* Ensures it doesn’t get too big */
+    height: auto;
+    filter: drop-shadow(0 0 10px red);
     animation: fadeIn 2s ease-in-out;
 }
 
