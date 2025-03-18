@@ -172,3 +172,19 @@ footer {
     text-align: center;
     animation: fadeIn 1.5s ease-in;
 }
+.gr-image {
+    width: 80%;  /* Controls default width */
+    max-width: 600px;  /* Prevents it from becoming too large */
+    height: auto;  /* Maintains aspect ratio */
+    border-radius: 8px; /* Keeps rounded corners */
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+    .gr-image {
+        width: 90%;  /* Makes it smaller on mobile */
+        max-width: 300px;  /* Limits max size */
+        height: auto;
+    }
+}
+
