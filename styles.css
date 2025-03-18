@@ -182,7 +182,7 @@ footer {
 /* Adjust for mobile screens */
 @media (max-width: 768px) {
     .gr-image {
-        width: 90%;  /* Makes it smaller on mobile */
+        width: 70%;  /* Makes it smaller on mobile */
         max-width: 300px;  /* Limits max size */
         height: auto;
     }
