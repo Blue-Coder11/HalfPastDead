@@ -75,6 +75,7 @@ header {
     text-align: center;
     animation: fadeIn 1.5s ease-in;
 	color: black;
+	  filter: drop-shadow(0 0 10px red);
 
 }
 
@@ -96,10 +97,19 @@ header {
 
 .hero-image {
     width: 10%; /* Default size for larger screens */
-    max-width: 100px; /* Ensures it doesn’t get too big */
+    max-width: 400px; /* Ensures it doesn’t get too big */
     height: auto;
     animation: fadeIn 2s ease-in-out;
 }
+
+/* Make the image bigger on mobile */
+@media (max-width: 768px) {
+    .hero-image {
+        width: 90%;  /* Increase size on smaller screens */
+        max-width: 500px; /* Allow a bigger max size */
+    }
+}
+
 
 .explore {
     position: absolute;
