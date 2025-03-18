@@ -104,7 +104,7 @@ header {
 /* Make the image bigger on mobile */
 @media (max-width: 768px) {
     .hero-image {
-        width: 90%;  /* Increase size on smaller screens */
+        width: 70%;  /* Increase size on smaller screens */
         max-width: 500px; /* Allow a bigger max size */
     }
 }
