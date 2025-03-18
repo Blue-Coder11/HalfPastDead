@@ -35,7 +35,7 @@ body {
     top: 0;
     background: rgba(20, 20, 20, 0.9);
     padding-top: 60px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .sidebar a {
@@ -95,20 +95,28 @@ header {
 }
 
 .hero-image {
-    width: 10%; /* Default size for larger screens */
-    max-width: 400px; /* Ensures it doesn’t get too big */
+    width: 40%;  /* Adjusted for better scaling */
+    max-width: 400px; /* Ensures proper sizing on larger screens */
     height: auto;
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Make the image bigger on mobile */
+/* Mobile optimization */
 @media (max-width: 768px) {
     .hero-image {
-        width: 50%;  /* Increase size on smaller screens */
-        max-width: 300px; /* Allow a bigger max size */
+        width: 70%;  /* Bigger image on smaller screens */
+        max-width: 320px; /* Prevents excessive scaling */
     }
 }
 
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Explore Button */
 .explore {
     position: absolute;
     bottom: 50px;
@@ -124,7 +132,7 @@ header {
     animation: bounce 1.5s infinite;
 }
 
-/* Sections */
+/* Content Sections */
 .content-section {
     margin: 50px auto;
     width: 80%;
@@ -150,8 +158,8 @@ p {
 
 .gallery-grid img {
     width: 100%;
-    height: 310px; /* Set a uniform height */
-    object-fit: cover; /* Ensures images fill the space without distortion */
+    height: auto; /* Ensures full responsiveness */
+    object-fit: cover; /* Prevents distortion */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
@@ -172,19 +180,19 @@ footer {
     text-align: center;
     animation: fadeIn 1.5s ease-in;
 }
+
+/* General Responsive Image */
 .gr-image {
-    width: 80%;  /* Controls default width */
-    max-width: 600px;  /* Prevents it from becoming too large */
-    height: auto;  /* Maintains aspect ratio */
-    border-radius: 8px; /* Keeps rounded corners */
+    width: 80%;  /* Default for larger screens */
+    max-width: 600px;  /* Prevents excessive size */
+    height: auto;  
+    border-radius: 8px;
 }
 
-/* Adjust for mobile screens */
+/* Mobile Optimization */
 @media (max-width: 768px) {
     .gr-image {
-        width: 70%;  /* Makes it smaller on mobile */
-        max-width: 300px;  /* Limits max size */
-        height: auto;
+        width: 70%;
+        max-width: 300px;
     }
 }
-
