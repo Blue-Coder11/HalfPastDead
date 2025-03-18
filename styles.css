@@ -74,9 +74,8 @@ header {
     z-index: 1000;
     text-align: center;
     animation: fadeIn 1.5s ease-in;
-	color: black;
-	  filter: drop-shadow(0 0 10px #E10600);
-
+    color: black;
+    filter: drop-shadow(0 0 10px #E10600);
 }
 
 .logo {
@@ -110,7 +109,6 @@ header {
     }
 }
 
-
 .explore {
     position: absolute;
     bottom: 50px;
@@ -140,7 +138,10 @@ h2 {
 
 p {
     animation: fadeIn 2s ease-in;
-}.gallery-grid {
+}
+
+/* Gallery Section */
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
@@ -149,7 +150,8 @@ p {
 
 .gallery-grid img {
     width: 100%;
-    height: auto;
+    height: 250px; /* Set a uniform height */
+    object-fit: cover; /* Ensures images fill the space without distortion */
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
@@ -157,7 +159,6 @@ p {
 .gallery-grid img:hover {
     transform: scale(1.05);
 }
-
 
 /* Footer */
 footer {
@@ -171,4 +172,3 @@ footer {
     text-align: center;
     animation: fadeIn 1.5s ease-in;
 }
-
